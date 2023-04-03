@@ -65,5 +65,10 @@ use {
         require('Comment').setup()
     end
 }
+
+use {
+    "sbdchd/neoformat"
+}
+
 end)
 
