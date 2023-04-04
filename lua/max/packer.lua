@@ -13,9 +13,16 @@ return require('packer').startup(function(use)
 	  requires = { {'nvim-lua/plenary.nvim'} }
   }
 
-  use({ 'rose-pine/neovim', as = 'rose-pine' })
-
-  vim.cmd('colorscheme rose-pine')
+  use({
+      'projekt0n/github-nvim-theme', tag = 'v0.0.7',
+      -- or                            branch = '0.0.x'
+      config = function()
+          require('github-theme').setup({
+              theme_style = "dark",
+              transparent = true
+          })
+      end
+  })
 
   use ('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
   use ('nvim-treesitter/playground')
@@ -70,5 +77,8 @@ use {
     "sbdchd/neoformat"
 }
 
+use {
+    "nvim-tree/nvim-tree.lua"
+}
 end)
 
