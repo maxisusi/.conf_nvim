@@ -84,5 +84,12 @@ use {
 use {
     "github/copilot.vim"
 }
+use {
+    "ggandor/leap.nvim",
+    require('leap').add_default_mappings(),
+    requires = {
+        "tpope/vim-repeat",
+    }
+}
 end)
 
