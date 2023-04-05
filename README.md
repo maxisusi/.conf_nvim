@@ -1,4 +1,4 @@
-# My neovim config
+# Max's Neovim Config
 
 ### Startup script:
 
