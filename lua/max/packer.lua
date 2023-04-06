@@ -86,7 +86,6 @@ use {
 }
 use {
     "ggandor/leap.nvim",
-    require('leap').add_default_mappings(),
     requires = {
         "tpope/vim-repeat",
     }

@@ -11,3 +11,5 @@ vim.api.nvim_create_autocmd({"VimEnter"}, {
      require("nvim-tree.api").tree.open()
   end
 })
+
+require('leap').add_default_mappings(true)
